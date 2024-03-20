@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    position: relative;
+}
+
+.navbar{
+    position: sticky;
+}
+
+#status{
+    height: 7rem;
+    width: 100%;
+    /* background-color: #dadada; */
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#status::-webkit-scrollbar {
+    display: none;
+}
+
+#person{
+    height: 6rem;
+    width: 6rem;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+    margin: .5rem;
+    overflow: hidden;
+}
+
+#person img{
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+#page{
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+}
+
+hr{
+    width: 98%;
+    left: 1%;
+    position: absolute;
+}

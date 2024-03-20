@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+html,
+body {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+table{
+    border: 5px double #dddddd;
+    border-radius: 5px;
+    margin: 50px;
+}
+
+td,th {
+    border: 5px double #dddddd;
+    text-align: center;
+    padding: 12px;
+}

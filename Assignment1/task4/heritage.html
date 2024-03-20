@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Photo Gallery</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="fetchHeritageSites()">
+    <div id="main">
+      <nav class="navbar fixed-top navbar-expand-lg bg-info">
+        <div class="container-fluid">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img
+              src="https://rabbitloader.xyz/cdn-cgi/imagedelivery/snCP5PBB5WA6h1AzjI590Q/aac45933-83b6-4b0c-3337-293d73489000/w1200"
+              alt="Logo"
+              width="50"
+              height="40"
+              class="d-inline-block align-text-top"
+            />
+            Mumbai</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./heritage.html">Heritage</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./hotel.html">Hotel Booking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./gallery.html">Gallery</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button type="button" class="btn btn-outline-dark">search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div class="cardCollect">
+        <!-- -------------- -->
+        <!-- <div class="cardArea">
+          <div class="card">
+            <div class="card-img-top" >
+              <img src="https://i.pinimg.com/564x/80/6a/5f/806a5f60c5920850b32639a51547f2aa.jpg" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <div class="rating">
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              </div>
+              <p class="card-text small">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Book</a>
+            </div>
+          </div>
+        </div> -->
+        <!-- -------------- -->
+        <!-- -------------- -->
+        <!-- <div class="cardArea">
+          <div class="card">
+            <div class="card-img-top" >
+              <img src="https://i.pinimg.com/474x/83/9e/fe/839efe28d4e47810182789ead59a1ceb.jpg" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <div class="rating">
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              </div>
+              <p class="card-text small">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Book</a>
+            </div>
+          </div>
+        </div> -->
+        <!-- -------------- -->
+        <!-- -------------- -->
+        <!-- <div class="cardArea">
+          <div class="card">
+            <div class="card-img-top" >
+              <img src="https://i.pinimg.com/474x/b8/d1/96/b8d19603102ecd0a25b7a709d9ef4593.jpg" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <div class="rating">
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              </div>
+              <p class="card-text small">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Book</a>
+            </div>
+          </div>
+        </div> -->
+        <!-- -------------- -->
+        <!-- -------------- -->
+        <!-- <div class="cardArea">
+          <div class="card">
+            <div class="card-img-top" >
+              <img src="https://i.pinimg.com/474x/ad/6b/a7/ad6ba7bf5446d0acbc39adb41cbc94c9.jpg" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <div class="rating">
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              </div>
+              <p class="card-text small">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Book</a>
+            </div>
+          </div>
+        </div> -->
+        <!-- -------------- -->
+        <!-- -------------- -->
+        <!-- <div class="cardArea">
+          <div class="card">
+            <div class="card-img-top" >
+              <img src="https://i.pinimg.com/564x/f6/bf/2e/f6bf2ead8546606c5da8094f461b7299.jpg" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <div class="rating">
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              </div>
+              <p class="card-text small">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Book</a>
+            </div>
+          </div>
+        </div> -->
+        <!-- -------------- -->
+        <!-- -------------- -->
+        <!-- <div class="cardArea">
+          <div class="card">
+            <div class="card-img-top" >
+              <img src="https://i.pinimg.com/564x/f6/bf/2e/f6bf2ead8546606c5da8094f461b7299.jpg" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <div class="rating">
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              </div>
+              <p class="card-text small">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Book</a>
+            </div>
+          </div>
+        </div> -->
+        <!-- -------------- -->
+        <!-- -------------- -->
+        <!-- <div class="cardArea">
+          <div class="card">
+            <div class="card-img-top" >
+              <img src="https://i.pinimg.com/564x/f6/bf/2e/f6bf2ead8546606c5da8094f461b7299.jpg" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <div class="rating">
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              </div>
+              <p class="card-text small">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Book</a>
+            </div>
+          </div>
+        </div> -->
+        <!-- -------------- -->
+        <!-- -------------- -->
+        <!-- <div class="cardArea">
+          <div class="card">
+            <div class="card-img-top" >
+              <img src="https://i.pinimg.com/564x/f6/bf/2e/f6bf2ead8546606c5da8094f461b7299.jpg" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <div class="rating">
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              </div>
+              <p class="card-text small">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Book</a>
+            </div>
+          </div>
+        </div> -->
+        <!-- -------------- -->
+
+      </div>
+
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/c737d00714.js" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

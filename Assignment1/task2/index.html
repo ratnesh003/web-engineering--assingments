@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div id="contain">
+        <div id="login">
+          <h1>login</h1>
+          <div class="formatting">
+            <label for="">Email </label>
+            <input type="email" name="loginEmail" id="" />
+          </div>
+          <div class="formatting">
+            <label for="">Password </label>
+            <input type="password" name="loginPassword" id="" />
+          </div>
+          <div class="bottonStyle">
+            <button type="submit">Login</button>
+            <button onclick=goRegister() type="button">Register</button>
+          </div>
+        </div>
+        <div id="registration">
+          <h1>Register</h1>
+          <div class="formatting">
+            <label for="">Email </label>
+            <input type="email" name="registerEmail" id="" />
+          </div>
+          <div class="formatting">
+            <label for="">Password </label>
+            <input type="password" name="registerPassword" id="" />
+          </div>
+          <div class="bottonStyle">
+            <button type="submit">Register</button>
+            <button onclick="goLogin()" type="button">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
